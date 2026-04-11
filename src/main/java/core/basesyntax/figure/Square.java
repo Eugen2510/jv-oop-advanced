@@ -1,0 +1,27 @@
+package core.basesyntax.figure;
+
+import core.basesyntax.supply.Color;
+import core.basesyntax.supply.FigureType;
+
+public class Square extends Figure {
+    private final double side;
+
+    public Square(Color color, double side) {
+        super(color, FigureType.SQUARE);
+        this.side = side;
+    }
+
+    @Override
+    public double calculateArea() {
+        return side * side;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("Figure: " +
+                getFigureType().name().toLowerCase() + ", " +
+                "area: " + calculateArea() + " sq. units, " +
+                "side: " + side + " units, " +
+                "color: " + getColor().name().toLowerCase());
+    }
+}

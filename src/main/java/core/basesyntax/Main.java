@@ -1,0 +1,26 @@
+package core.basesyntax;
+
+import core.basesyntax.figure.Figure;
+import core.basesyntax.supply.FigureSupplier;
+
+public class Main {
+    private final static int MAX_FIGURES_NUMBER = 10;
+
+    public static void main(String[] args) {
+        FigureSupplier supplier = new FigureSupplier();
+
+        Figure[] figures = new Figure[MAX_FIGURES_NUMBER];
+
+        for (int i = 0; i < MAX_FIGURES_NUMBER; i++) {
+            if (i < MAX_FIGURES_NUMBER / 2) {
+                figures[i] = supplier.getRandomFigure();
+            } else {
+                figures[i] = supplier.getDefaultFigure();
+            }
+        }
+
+        for (Figure figure : figures) {
+            figure.draw();
+        }
+    }
+}
