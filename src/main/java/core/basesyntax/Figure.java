@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public abstract class Figure {
+public abstract class Figure implements Drawable {
     private final Color color;
     private final FigureType figureType;
 
@@ -18,6 +18,4 @@ public abstract class Figure {
     }
 
     public abstract double calculateArea();
-
-    public abstract void draw();
 }
