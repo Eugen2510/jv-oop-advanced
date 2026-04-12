@@ -18,10 +18,10 @@ public class Square extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: " +
-                getFigureType().name().toLowerCase() + ", " +
-                "area: " + calculateArea() + " sq. units, " +
-                "side: " + side + " units, " +
-                "color: " + getColor().name().toLowerCase());
+        System.out.println("Figure: "
+                + getFigureType().name().toLowerCase() + ", "
+                + "area: " + calculateArea() + " sq. units, "
+                + "side: " + side + " units, "
+                + "color: " + getColor().name().toLowerCase());
     }
 }

@@ -20,11 +20,11 @@ public class Rectangle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: " +
-                getFigureType().name().toLowerCase() + ", " +
-                "area: " + calculateArea() + "\" sq. units, " +
-                "sideA: " + sideA + " units, " +
-                "sideB: " + sideB + " units, " +
-                "color: " + getColor().name().toLowerCase());
+        System.out.println("Figure: "
+                + getFigureType().name().toLowerCase() + ", "
+                + "area: " + calculateArea() + "\" sq. units, "
+                + "sideA: " + sideA + " units, "
+                + "sideB: " + sideB + " units, "
+                + "color: " + getColor().name().toLowerCase());
     }
 }

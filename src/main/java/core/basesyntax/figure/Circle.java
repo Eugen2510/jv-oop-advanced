@@ -18,10 +18,10 @@ public class Circle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: " +
-                getFigureType().name().toLowerCase() + ", " +
-                "area: " + calculateArea() + " sq. units, " +
-                "radius: " + radius + " units, " +
-                "color: " + getColor().name().toLowerCase());
+        System.out.println("Figure: "
+                + getFigureType().name().toLowerCase() + ", "
+                + "area: " + calculateArea() + " sq. units, "
+                + "radius: " + radius + " units, "
+                + "color: " + getColor().name().toLowerCase());
     }
 }

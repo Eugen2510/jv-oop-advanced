@@ -20,11 +20,11 @@ public class RightTriangle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: " +
-                getFigureType().name().toLowerCase() + ", " +
-                "area: " + calculateArea() + " sq. units, " +
-                "legA: " + legA + " units, " +
-                "legB: " + legB + " units, " +
-                "color: " + getColor().name().toLowerCase());
+        System.out.println("Figure: "
+                + getFigureType().name().toLowerCase() + ", "
+                + "area: " + calculateArea() + " sq. units, "
+                + "legA: " + legA + " units, "
+                + "legB: " + legB + " units, "
+                + "color: " + getColor().name().toLowerCase());
     }
 }

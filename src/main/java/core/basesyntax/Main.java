@@ -4,7 +4,7 @@ import core.basesyntax.figure.Figure;
 import core.basesyntax.supply.FigureSupplier;
 
 public class Main {
-    private final static int MAX_FIGURES_NUMBER = 10;
+    private static final int MAX_FIGURES_NUMBER = 10;
 
     public static void main(String[] args) {
         FigureSupplier supplier = new FigureSupplier();
