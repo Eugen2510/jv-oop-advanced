@@ -1,7 +1,4 @@
-package core.basesyntax.figure;
-
-import core.basesyntax.supply.Color;
-import core.basesyntax.supply.FigureType;
+package core.basesyntax;
 
 public class RightTriangle extends Figure {
     private final double legA;

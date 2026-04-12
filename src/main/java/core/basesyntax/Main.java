@@ -1,8 +1,5 @@
 package core.basesyntax;
 
-import core.basesyntax.figure.Figure;
-import core.basesyntax.supply.FigureSupplier;
-
 public class Main {
     private static final int MAX_FIGURES_NUMBER = 10;
 

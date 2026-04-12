@@ -1,7 +1,4 @@
-package core.basesyntax.figure;
-
-import core.basesyntax.supply.Color;
-import core.basesyntax.supply.FigureType;
+package core.basesyntax;
 
 public abstract class Figure {
     private final Color color;
