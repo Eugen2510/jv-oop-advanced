@@ -1,5 +1,6 @@
 package core.basesyntax;
 
+import java.util.Locale;
 import java.util.Random;
 
 public class FigureSupplier {
@@ -19,7 +20,7 @@ public class FigureSupplier {
 
     public Figure getRandomFigure() {
         FigureType type = getRandomFigureType();
-        Color color = colorSupplier.getRandomColor();
+        String color = colorSupplier.getRandomColor();
         return switch (type) {
             case CIRCLE -> new Circle(color, genRandDimension());
             case ISOSCELES_TRAPEZOID -> new IsoscelesTrapezoid(color, genRandDimension(),
@@ -32,6 +33,6 @@ public class FigureSupplier {
     }
 
     public Figure getDefaultFigure() {
-        return new Circle(Color.WHITE, 10);
+        return new Circle(Color.WHITE.name().toLowerCase(), 10);
     }
 }

@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class Main {
-    private static final int MAX_FIGURES_NUMBER = 10;
+    private static final int MAX_FIGURES_NUMBER = 6;
 
     public static void main(String[] args) {
         FigureSupplier supplier = new FigureSupplier();
